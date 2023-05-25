@@ -1,0 +1,61 @@
+.main_block {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main_block_container {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    padding-top: 150px;
+    /*border: 2px solid  white;*/
+}
+
+.main_block_left {
+
+}
+
+.main_text {
+    font-size: 80px;
+    color: #d5cece;
+}
+
+.main_name {
+    color: #4343dc;
+}
+
+.main_subtext {
+    color: #d5cece;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.hren {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 2px solid white;*/
+}
+
+.hren_s_bugra {
+    width: 35px;
+    height: 64px;
+    border-radius: 20px;
+    border: 4px solid #4343dc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+.hren_s_bugra2 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #4343dc;
+    margin-bottom: 1px;
+}
