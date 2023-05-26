@@ -5,7 +5,7 @@
     height: 80px;
     width: 100vw;
     background-color: #1a0a1e;
-
+    z-index: 1;
 }
 
 .container {
