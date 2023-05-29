@@ -12,7 +12,7 @@ function App() {
         <div className='app'>
             <Header />
             <Main />
-            {/*<About />*/}
+            <About />
         </div>
     );
 }

@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    color: #9d9494;
+
 }
 
 .links_block {
@@ -49,11 +49,24 @@
     list-style: none;
 }
 
-.link {
+.link_item {
     margin-left: 25px;
     font-size: 22px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.link_item .link {
+    color: #9d9494;
+    text-decoration: none;
+}
+
+.link_item .link:hover {
+    color: #4343dc;
+}
+
+.active {
+    color: #4343dc;
 }
 
 @keyframes animate {

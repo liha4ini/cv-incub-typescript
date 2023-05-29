@@ -1,14 +1,18 @@
-import React, {useEffect, useRef, useMemo} from 'react';
+import React, {useEffect, useRef, Suspense} from 'react';
 
 import {motion} from 'framer-motion';
 import Typed from 'typed.js';
+import {Canvas} from "@react-three/fiber";
 
 import './Main.css';
 import foto from '../../assets/my_foto.jpg';
-import logo from '../../assets/logo.png';
+import Sphere from '../AnimatedSphere';
+import {OrbitControls} from "@react-three/drei";
+
 
 export const Main = () => {
     const el = useRef();
+    const backText = useRef()
 
     useEffect(() => {
         const options = {
@@ -32,20 +36,53 @@ export const Main = () => {
         };
     }, []);
 
+    useEffect(() => {
+        const options = {
+            strings: ["Nice to meet you!"],
+            typeSpeed: 30,
+            showCursor: false,
+            cursorChar: "&#128075;",
+            backSpeed: 20,
+            smartBackspace: true,
+            shuffle: true,
+            startDelay: 500,
+            backDelay: 2000,
+            loop: true,
+            loopCount: Infinity
+        };
+
+        const typed = new Typed(backText.current, options);
+
+        return () => {
+            typed.destroy();
+        };
+    }, []);
+
 
     return (
         <div className='main_block' style={{backgroundImage: 'url("img/herobg.png")'}}>
             <div className="main_block_container">
                 <div className="main_block_left">
 
-                    <h1 className='main_text' >
+                    <h1 className='main_text'>
                         Hi, I'm <span className='main_name' ref={el}></span>
                     </h1>
 
                     <p className='main_subtext'>
-                        I will help make your web application user-friendly <br className=''/>and attractive for you and
+                        I will help make your web application<br/> user-friendly and attractive for you and
                         your customers
                     </p>
+
+                    <div className='canvas'>
+                        <Canvas>
+                            <OrbitControls enableZoom={false}/>
+                            <ambientLight intensity={0.5}/>
+                            <directionalLight position={[-2, 5, 2]} intensity={1}/>
+                            <Suspense fallback={null}>
+                                <Sphere/>
+                            </Suspense>
+                        </Canvas>
+                    </div>
 
                 </div>
                 <div className="main_block_right">
@@ -56,16 +93,24 @@ export const Main = () => {
                             </div>
                             <div className="back">
                                 <div className="content">
-                                    <img className='logo' src={logo} alt="logo"/>
-                                    <h2>
-                                        Sergey
-                                        <span> Front-end Developer</span>
-                                    </h2>
+                                    <h3 className='back_title' ref={backText}></h3>
+                                    <p className='back_text'>
+                                        If you want to cooperate or if you are just a nice and interesting person -
+                                        contact me :)
+                                    </p>
                                     <ul className="socials">
                                         <li>
-
+                                            fgfgfgfg
                                         </li>
                                     </ul>
+                                    {/*<Canvas>*/}
+                                    {/*    <OrbitControls enableZoom={false}/>*/}
+                                    {/*    <ambientLight intensity={0.5}/>*/}
+                                    {/*    <directionalLight position={[-2, 5, 2]} intensity={1}/>*/}
+                                    {/*    <Suspense fallback={null}>*/}
+                                    {/*        <Sphere />*/}
+                                    {/*    </Suspense>*/}
+                                    {/*</Canvas>*/}
                                 </div>
                             </div>
                         </div>

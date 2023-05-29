@@ -13,6 +13,10 @@
     /*border: 2px solid  white;*/
 }
 
+.main_block_left {
+    height: 100%;
+}
+
 .main_text {
     font-size: 80px;
     color: #d5cece;
@@ -30,6 +34,29 @@
     color: #d5cece;
     font-size: 28px;
     margin-top: 20px;
+}
+
+.canvas {
+    height: 60% !important;
+    width: 70% !important;
+    /*background-color: #d5cece;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*height: 500px;*/
+}
+
+@media (min-width: 1900px) {
+    .canvas {
+        height: 60% !important;
+        width: 100% !important;
+        margin-top: 90px;
+        /*background-color: #d5cece;*/
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        /*height: 500px;*/
+    }
 }
 
 .hren {
@@ -68,13 +95,7 @@
 .wrapper-card {
     width: 400px;
     height: 300px;
-    /*display: flex;*/
-    /*align-items: flex-end;*/
-    /*justify-content: center;*/
     position: relative;
-    /* padding-top: 130px;
-    padding-left: 100px; */
-    /*border: 1px solid white;*/
 }
 
 .card {
@@ -119,7 +140,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 25px 25px;
+}
+
+.back_title {
+    font-size: 30px;
+    height: 30%;
+    color: #4343dc;
+}
+
+.back_text {
+    font-size: 18px;
+    height: 40%;
+    margin-top: 20px;
+}
+
+.socials {
+    height: 30%;
 }
 
 .logo {
@@ -140,5 +186,16 @@
 
     90%, 100% {
         transform: perspective(23rem) rotateY(360deg);
+    }
+}
+
+@media (min-width: 1900px) {
+    .main_text {
+        font-size: 100px;
+    }
+
+    .wrapper-card {
+        width: 600px;
+        height: 450px;
     }
 }
