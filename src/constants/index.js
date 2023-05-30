@@ -204,15 +204,15 @@ const projects = [
         tags: [
             {
                 name: "react",
-                color: "blue-text-gradient",
+                color: "#d5cece",
             },
             {
                 name: "nextJS",
-                color: "green-text-gradient",
+                color: "green",
             },
             {
                 name: "scss",
-                color: "pink-text-gradient",
+                color: "pink",
             },
         ],
         image: carrent,
@@ -225,15 +225,15 @@ const projects = [
         tags: [
             {
                 name: "react",
-                color: "blue-text-gradient",
+                color: "blue",
             },
             {
                 name: "restapi",
-                color: "green-text-gradient",
+                color: "green",
             },
             {
                 name: "scss",
-                color: "pink-text-gradient",
+                color: "pink",
             },
         ],
         image: jobit,
@@ -246,15 +246,15 @@ const projects = [
         tags: [
             {
                 name: "nextjs",
-                color: "blue-text-gradient",
+                color: "blue",
             },
             {
                 name: "supabase",
-                color: "green-text-gradient",
+                color: "green",
             },
             {
                 name: "css",
-                color: "pink-text-gradient",
+                color: "pink",
             },
         ],
         image: tripguide,
