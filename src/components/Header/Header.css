@@ -58,14 +58,17 @@
 
 .link_item .link {
     color: #9d9494;
-    text-decoration: none;
 }
 
 .link_item .link:hover {
-    color: #4343dc;
+    color: #7979d7;
 }
 
 .active {
+    /*margin-left: 25px;*/
+    /*font-size: 22px;*/
+    /*font-weight: bold;*/
+    /*cursor: pointer;*/
     color: #4343dc;
 }
 

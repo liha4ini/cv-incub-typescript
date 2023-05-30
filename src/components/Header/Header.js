@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 
-// @ts-ignore
 import logo from '../../assets/logo.png';
 import {navLinks} from "../../constants";
 import './Header.css';
@@ -8,12 +7,17 @@ import './Header.css';
 export const Header = () => {
 
     const [active, setActive] = useState('');
-    const [toggle, setToggle] = useState(false);
+    // const [toggle, setToggle] = useState(false);
 
     const elements = navLinks.map((el) => {
+        console.log(el)
         return (
-            <li key={el.id} className='link_item'>
-                <a className='link' href="#">{el.title}</a>
+            <li
+                key={el.id}
+                className='link_item'
+                onClick={() => setActive(el.title)}
+            >
+                <a className={active === el.title ? 'active' : 'link'} href={`#${el.id}`}>{el.title}</a>
             </li>
         )
     })
