@@ -1,7 +1,7 @@
 .app {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(45deg, #636363, #000000);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,0,23,1) 0%, rgba(0,1,25,1) 100%, rgba(255,0,249,1) 100%);
 }
 
 
