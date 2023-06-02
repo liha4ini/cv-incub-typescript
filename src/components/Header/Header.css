@@ -65,10 +65,6 @@
 }
 
 .active {
-    /*margin-left: 25px;*/
-    /*font-size: 22px;*/
-    /*font-weight: bold;*/
-    /*cursor: pointer;*/
     color: #4343dc;
 }
 
@@ -83,5 +79,20 @@
 
     90%, 100% {
         transform: perspective(23rem) rotateY(360deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .header_info {
+        display: none;
+    }
+
+    .links_block {
+        display: none;
     }
 }

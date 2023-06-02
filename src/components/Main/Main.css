@@ -164,6 +164,11 @@
     margin-top: 20px;
 }
 
+.hand {
+    width: 150px;
+    height: 150px;
+}
+
 .socials {
     height: 30%;
 }
@@ -197,5 +202,31 @@
     .wrapper-card {
         width: 600px;
         height: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main_block_right {
+        display: none;
+    }
+    .main_block_container {
+        width: 100%;
+        height: auto;
+        padding-top: 120px;
+    }
+
+    .main_text {
+        font-size: 35px;
+        padding: 0 10px;
+    }
+
+    .main_subtext {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .canvas {
+        width: 100% !important;
+        margin-top: 50px;
     }
 }

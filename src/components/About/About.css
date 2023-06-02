@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 70%;
+    /*border: 1px solid white;*/
 }
 
 .about_title {
@@ -30,12 +31,17 @@
 .about_card_block {
     margin-top:80px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items: center;*/
+    /*flex-wrap: nowrap;*/
     /*justify-content: space-between;*/
+    /*border: 1px solid white;*/
 }
 /* card */
 
 .card_about_wrapper {
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .card_about {
@@ -68,4 +74,64 @@
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+}
+
+
+@media (min-width: 1900px) {
+    .about {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .about_title {
+        font-size: 65px;
+    }
+
+    .card_about {
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about {
+        height: auto;
+        padding-bottom: 60px;
+        width: 100%;
+    }
+
+    .about_container {
+        width: 90%;
+    }
+
+    .about_card_block {
+        flex-direction: column;
+    }
+
+    .about_sub_title {
+        font-size: 17px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    .about_card_block {
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .about_title {
+        font-size: 45px;
+        margin-top: 50px;
+    }
+
+    .card_about_wrapper {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .card_about {
+        /*width: 350px;*/
+        /*height: 450px;*/
+        width: 100%;
+    }
 }

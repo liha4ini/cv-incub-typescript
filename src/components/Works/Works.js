@@ -11,7 +11,7 @@ import './Works.css';
 
 export const Works = () => {
     return (
-        <div className='works'>
+        <div className='works' id='work'>
             <div className="works_container">
                 <motion.div variants={textVariant()}>
                     <h2 className='works_title'>My Projects</h2>

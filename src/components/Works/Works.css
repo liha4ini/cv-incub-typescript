@@ -99,3 +99,52 @@
     font-size: 14px;
     color: #4343dc;
 }
+
+@media (min-width: 1900px) {
+    .works {
+        min-height: auto;
+        padding-bottom: 100px;
+    }
+
+    .works_title {
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 500px) {
+    .works {
+        height: auto;
+        width: 100%;
+    }
+
+    .works_container {
+        width: 90%;
+    }
+
+    .works_sub_title_text {
+        font-size: 17px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    .works_card_block {
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .works_title {
+        font-size: 45px;
+        margin-top: 50px;
+    }
+
+    .works_card_wrapper {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .dfdfdf {
+        width: 100%;
+    }
+}
